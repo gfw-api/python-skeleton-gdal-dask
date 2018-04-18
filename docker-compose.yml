@@ -1,7 +1,7 @@
 prod:
-  image: vizzuality/python-skeleton-gdal-dissolve:1.0.0${STAGING}
+  image: vizzuality/python-skeleton-gdal-dask:1.0.0${STAGING}
   ports:
-    - "5800"
+    - "5900"
   env_file:
     - prod.env
   command: start
@@ -10,4 +10,4 @@ prod:
   log_driver: "syslog"
   log_opt:
       syslog-address: ${SYSLOG_ADDRESS}
-      tag: python-skeleton-gdal-dissolve${STAGING}
+      tag: python-skeleton-gdal-dask${STAGING}

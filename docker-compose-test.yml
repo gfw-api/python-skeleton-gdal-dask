@@ -2,7 +2,7 @@ test:
   extends:
     file: base.yml
     service: base
-  container_name: python-skeleton-gdal-dissolve
+  container_name: python-skeleton-gdal-dask
   environment:
     DEBUG: "True"
     CT_URL: http://mymachine:9000

@@ -1,7 +1,7 @@
 base:
   build: .
   ports:
-    - "5800:5800"
+    - "5900:5900"
   environment:
-    PORT: 5800
-  container_name: python-skeleton-gdal-dissolve
+    PORT: 5900
+  container_name: python-skeleton-gdal-dask
